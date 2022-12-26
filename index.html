@@ -1,0 +1,41 @@
+<!doctype HTML>
+<html lang="en_GB">
+<head>
+<title>HTML5 Calculator</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
+<body>
+<div class="container" draggable="true">
+<h1 class="title" >HTML5 Calculator</h1>
+<h2 class="author" align="right">by WaysideBaker57</h2>
+<div class="calculator">
+<div style="display: flex;" id="calcDisplayContainer">
+	<div id="calcDisplay"></div>
+	<div class="delete calcButton">
+		<p style="margin-top: 2px;" onclick="deleteLast()" ondblclick="clearAll()"><-</p>
+	</div>
+</div>
+<div class="calcButtonsContainer">
+<div class="calcButton" onclick="updateDisplay(1)"><p>1</p></div>
+<div class="calcButton" onclick="updateDisplay(2)"><p>2</p></div>
+<div class="calcButton" onclick="updateDisplay(3)"><p>3</p></div>
+<div class="calcButton" onclick="multipliedBy()"><p>*</p></div>
+<div class="calcButton" onclick="updateDisplay(4)"><p>4</p></div>
+<div class="calcButton" onclick="updateDisplay(5)"><p>5</p></div>
+<div class="calcButton" onclick="updateDisplay(6)"><p>6</p></div>
+<div class="calcButton" onclick="totalOf()"><p>+</p></div>
+<div class="calcButton" onclick="updateDisplay(7)"><p>7</p></div>
+<div class="calcButton" onclick="updateDisplay(8)"><p>8</p></div>
+<div class="calcButton" onclick="updateDisplay(9)"><p>9</p></div>
+<div class="calcButton" onclick="subtractedBy()"><p>-</p></div>
+<div class="calcButton" onclick="point()"><p>.</p></div>
+<div class="calcButton" onclick="updateDisplay(0)"><p>0</p></div>
+<div class="calcButton" onclick="dividedBy()"><p>/</p></div>
+<div class="calcButton" onclick="solve()"><p>=</p></div>
+</div>
+</div>
+</div>
+<script src="./js/main.js"></script>
+</body>
+</html>
