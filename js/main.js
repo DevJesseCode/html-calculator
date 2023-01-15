@@ -1,10 +1,10 @@
-var calcDisplay = document.getElementById('calcDisplay');
-var part1
-var part2
-var part3
-var functionToPerform = ""
-var functionToPerform2 = ""
-var expression
+const calcDisplay = document.getElementById('calcDisplay');
+let part1
+let part2
+let part3
+let functionToPerform = ""
+let functionToPerform2 = ""
+let expression
 
 function updateDisplay(value) {
 	calcDisplay.innerHTML = calcDisplay.innerHTML + value
