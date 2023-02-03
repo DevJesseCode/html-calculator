@@ -6,7 +6,8 @@
 <link rel="stylesheet" type="text/css" href="./css/main.css">
 </head>
 <body>
-<div class="container" draggable="true">
+<div draggable="true" id="mainContainer">
+<div class="container calcContainer">
 <h1 class="title" >HTML5 Calculator</h1>
 <h2 class="author" align="right">by WaysideBaker57</h2>
 <div class="calculator">
@@ -33,7 +34,14 @@
 <div class="calcButton" onclick="updateDisplay(0)"><p>0</p></div>
 <div class="calcButton" onclick="dividedBy()"><p>/</p></div>
 <div class="calcButton" onclick="solve()"><p>=</p></div>
+<div class="calcButton specialButton" onclick="pi()"><p>&pi;</p></div>
+<div class="calcButton specialButton" onclick="square()"><p>x<sup>2</sup></p></div>
 </div>
+</div>
+</div>
+<div class="container">
+<h2 class="historyHeading">History</h2>
+<hr style="margin: 5px auto;width: 95%;">
 </div>
 </div>
 <script src="./js/main.js"></script>

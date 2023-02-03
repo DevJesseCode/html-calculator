@@ -1,7 +1,8 @@
 body{
-border-width: 0px;
-margin: 0% 1%;
-font-family: Montserrat;
+	border-width: 0px;
+	margin: 0% 1%;
+	font-family: Montserrat;
+	background-color: yellow;
 }
 
 .container{
@@ -9,6 +10,19 @@ font-family: Montserrat;
 	border: 5px solid black;
 	margin-top: 1vw;
 	border-radius: 30px;
+}
+
+.calcContainer{
+	margin-right: 10px;
+}
+
+.historyHeading{
+	margin: 8px 0px 0px 8px;
+	font-family: Comic Sans MS;
+}
+
+#mainContainer{
+	display: flex;
 }
 
 .title{
@@ -22,22 +36,22 @@ font-family: Montserrat;
 }
 
 div.calculator{
-background-color: #dadada;
-border-radius: 10px;
-width: 50vw;
-margin: 0px auto 30px auto;
+	background-color: #dadada;
+	border-radius: 10px;
+	width: 50vw;
+	margin: 0px auto 30px auto;
 }
 
 #calcDisplay{
-font-family: Montserrat;
-background-color: #fff;
-text-align: right;
-width: auto;
-height: 19px;
-margin: 10px 10px 10px 10px;
-padding: 5px;
-border-radius: 10px;
-flex-grow: 1;
+	font-family: Montserrat;
+	background-color: #fff;
+	text-align: right;
+	width: auto;
+	height: 19px;
+	margin: 10px 10px 10px 10px;
+	padding: 5px;
+	border-radius: 10px;
+	flex-grow: 1;
 }
 
 .delete.calcButton{
@@ -52,26 +66,31 @@ flex-grow: 1;
 }
 
 div.calcButtonsContainer{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-margin: 0px 10px 0px 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0px 10px 0px 10px;
 }
 
 div.calcButton{
-width: 23.5%;
-height: 40px;
-text-align: center;
-justify-content: center;
-border: 1px solid yellow;
-border-radius: 15px;
-margin-bottom: 9px;
-cursor: default;
+	width: 23.5%;
+	height: 40px;
+	text-align: center;
+	border: 1px solid yellow;
+	border-radius: 15px;
+	margin-bottom: 9px;
+	cursor: default;
+	background-color: #dadada;
+	transition: all .75s cubic-bezier(.47,0,.74,.71);
+}
+
+.specialButton > p{
+	margin-top: 10px;
 }
 
 div.calcButton:hover, div.calcButton:focus, div.calcButton:active{
-background-color: cyan;
-transition-duration: 750ms;
+	background-color: cyan;
+	transition: all .75s linear;
 }
 
 @media screen and (max-width: 1400px) and (min-width: 1300px) {
