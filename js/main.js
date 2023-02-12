@@ -349,9 +349,9 @@ function solve(){
 		part3 = ""
 	}
 	
-	part1 = calcDisplay.innerHTML
-	part2 = ""
-	part3 = ""
-	functionToPerform = ""
-	functionToPerform2 = ""
+	part1 = calcDisplay.innerHTML;
+	part2 = "";
+	part3 = "";
+	functionToPerform = "";
+	functionToPerform2 = "";
 }
